@@ -1,0 +1,71 @@
+.animated-button {
+  margin:0px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #0078d7, #00a8ff);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: center;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #00a8ff, #0078d7);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media Queries */
+  
+  /* Very Small Screens (360px to 480px) */
+  @media (max-width: 480px) {
+    .animated-button {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Small Screens (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .animated-button {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Medium Screens (769px to 1200px) */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .animated-button {
+        /* margin-left: 100px; */
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 22px;
+    }
+  }
+  
+  /* Large Screens (1201px to 1600px) */
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .animated-button {
+        /* margin-left: 100px; */
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 25px;
+    }
+  }
+  
+  /* Extra-Large Screens (1601px to 2000px) */
+  @media (min-width: 1601px) and (max-width: 2000px) {
+    .animated-button {
+        /* margin-left: 100px; */
+      padding: 12px 25px;
+      font-size: 15px;
+      border-radius: 28px;
+    }
+  }
+  
