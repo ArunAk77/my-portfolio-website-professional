@@ -1,11 +1,24 @@
 {
     "github": {
-        "silent": true
+      "silent": true
     },
     "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ],
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
