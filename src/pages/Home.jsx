@@ -2,12 +2,14 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import sakura from "../assets/sakura.mp3";
+import hanumankind from "../assets/hanumankind.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
+  const audioRef = useRef(new Audio(hanumankind));
+  // const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
@@ -30,7 +32,7 @@ const Home = () => {
 
     // If screen width is less than 768px, adjust the scale and position
     if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
+      screenScale = [1.8, 1.8, 1.8];
       screenPosition = [0, -1.5, 0];
     } else {
       screenScale = [3, 3, 3];
@@ -44,7 +46,7 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
+      screenScale = [0.75, 0.75, 0.75];
       screenPosition = [0, -6.5, -43.4];
     } else {
       screenScale = [1, 1, 1];
@@ -103,15 +105,14 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
-
       <div className='absolute bottom-2 left-2'>
-        <img
+        <img id='music'
           src={!isPlayingMusic ? soundoff : soundon}
           alt='jukebox'
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className='w-10 h-10 cursor-pointer object-contain'
         />
-      </div>
+      </div> 
     </section>
   );
 };

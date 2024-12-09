@@ -1,0 +1,38 @@
+.Profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+ }
+ 
+ /* Media query for screens 300px to 480px */
+ @media (max-width: 480px) {
+    .Profile {
+       width: 140px;
+       height: 140px;
+    }
+ }
+ 
+ /* Media query for screens 481px to 600px */
+ @media (min-width: 481px) and (max-width: 600px) {
+    .Profile {
+       width: 160px;
+       height: 160px;
+    }
+ }
+ 
+ /* Media query for screens 601px to 1024px */
+ @media (min-width: 601px) and (max-width: 1024px) {
+    .Profile {
+       width: 280px;
+       height: 280px;
+    }
+ }
+ 
+ /* Media query for screens 1025px to 2000px */
+ @media (min-width: 1025px) and (max-width: 2000px) {
+    .Profile {
+       width: 200px;
+       height: 200px;
+    }
+ }
+ 

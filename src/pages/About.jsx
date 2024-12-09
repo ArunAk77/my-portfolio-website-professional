@@ -36,7 +36,7 @@ const About = () => {
             <div className='block-container w-20 h-20' key={skill.name}>
               <div className='btn-back rounded-xl' />
               <div className='btn-front rounded-xl flex justify-center items-center'>
-                <img
+                <img id='skillimg'
                   src={skill.imageUrl}
                   alt={skill.name}
                   className='w-1/2 h-1/2 object-containers'

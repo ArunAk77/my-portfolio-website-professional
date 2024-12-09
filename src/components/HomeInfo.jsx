@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { photo2} from '../assets/images';
 import { arrow } from "../assets/icons";
+import './Profile.css';
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
@@ -17,10 +18,7 @@ const HomeInfo = ({ currentStage }) => {
     if (currentStage === 2) {
       return (
         <div className='info-box'>
-        {/* <p className='font-medium sm:text-xl text-center'>
-        "I'm a passionate Full Stack Developer, <br/> ready to innovate and solve challenges.
-        </p> */}
-        <img className="Profile" style={{width:"200px",height:"200px",borderRadius:"10px"}} src={photo2} alt="Professional Photo" />
+        <img className="Profile"  src={photo2} alt="Professional Photo" />
   
         <Link to='/contact' className='neo-brutalism-white neo-btn'>
         Contact

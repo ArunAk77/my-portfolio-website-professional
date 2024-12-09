@@ -94,6 +94,7 @@ body:has(.card[data-color="green"]:hover) {
     0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
 
+
 .block-container {
   width: 80px;
   height: 80px;
@@ -106,6 +107,70 @@ body:has(.card[data-color="green"]:hover) {
   position: relative;
   width: 80px;
   height: 80px;
+}
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .block-container {
+    width: 46.67px;
+    height: 46.67px;
+  }
+
+  .object-containers {
+    width: 46.67px;
+    height: 46.67px;
+  }
+}
+
+/* Media query for screens between 481px and 600px */
+@media (min-width: 481px) and (max-width: 600px) {
+  .block-container {
+    width: 68.2px;
+    height: 68.2px;
+  }
+
+  .object-containers {
+    width: 68.2px;
+    height: 68.2px;
+  }
+}
+/* Media query for budget mobile screens between 360px and 873px */
+@media (min-width: 360px) and (max-width: 873px) {
+  .block-container {
+    width: 66.6px;
+    height: 66.6px;
+  }
+
+  .object-containers {
+    width: 66.6px;
+    height: 66.6px;
+  }
+}
+/* Media query for luxury mobile screens between 412px and 915px */
+@media (min-width: 412px) and (max-width: 915px) {
+  .block-container {
+    width: 84px;
+    height: 84px;
+  }
+
+  .object-containers {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+
+/* Media query for screens between 601px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .block-container {
+    width:66.6px;
+    height:66.6px;
+  }
+
+  .object-containers {
+    width:66.6px;
+    height:66.6px;
+  }
 }
 
 .block-container .btn-back {
@@ -190,4 +255,31 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+/* Media Query for Music box*/
+/* For screens 300px to 480px */
+@media (min-width: 300px) and (max-width: 480px) {
+  #music {
+    width: 30px; /* Smaller size for small screens */
+    height: 30px;
+    margin-bottom: 110px;
+  }
+}
+
+/* For screens 481px to 600px */
+@media (min-width: 481px) and (max-width: 600px) {
+  #music {
+    width: 40px; /* Slightly larger for medium-small screens */
+    height: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+/* For screens 601px to 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #music {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 90px;
+  }
 }
