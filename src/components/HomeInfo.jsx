@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { photo2} from '../assets/images';
 import { arrow } from "../assets/icons";
-import './Profile.css';
+import './profile.css';
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
